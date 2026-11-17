@@ -11,6 +11,7 @@ dev = ["pytest==8.4.2", "ruff==0.14.1"]
 
 [tool.ruff]
 line-length = 100
+extend-exclude = ["Colab_Notebooks"]  # the team's notebooks are kept as written
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

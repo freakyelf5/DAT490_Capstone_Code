@@ -4,6 +4,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 LINK = re.compile(r"\]\(([^)#\s]+)(#[^)\s]*)?\)")
@@ -22,7 +23,7 @@ def anchors(path):
 def links(path):
     for target, anchor in LINK.findall(path.read_text(encoding="utf-8")):
         if not target.startswith("http"):
-            yield (path.parent / target).resolve(), anchor
+            yield (path.parent / unquote(target)).resolve(), anchor
 
 
 def test_every_rule_is_linked_from_readme():
