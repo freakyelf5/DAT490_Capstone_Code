@@ -1,0 +1,51 @@
+component,moiety,adhd_class,disposition,decision,rationale
+AMPHETAMINE,amphetamine,STIMULANT,INCLUDE,,seed ingredient
+AMPHETAMINE ADIPATE,amphetamine,STIMULANT,INCLUDE,,amphetamine salt
+AMPHETAMINE ASPARTATE,amphetamine,STIMULANT,INCLUDE,,mixed amphetamine salts component
+AMPHETAMINE ASPARTATE MONOHYDRATE,amphetamine,STIMULANT,INCLUDE,,mixed amphetamine salts component
+AMPHETAMINE SULFATE,amphetamine,STIMULANT,INCLUDE,,amphetamine salt
+DEXTROAMPHETAMINE,dextroamphetamine,STIMULANT,INCLUDE,,seed ingredient
+DEXTROAMPHETAMINE SACCHARATE,dextroamphetamine,STIMULANT,INCLUDE,,mixed amphetamine salts component
+DEXTROAMPHETAMINE SULFATE,dextroamphetamine,STIMULANT,INCLUDE,,dextroamphetamine salt
+DEXTROAMPHETAMINE HYDROCHLORIDE,dextroamphetamine,STIMULANT,INCLUDE,D1,not a US ADHD salt; almost never PS or SS; may be a non-US or cold-remedy product
+DEXTROAMPHETAMINE PHOSPHATE,dextroamphetamine,STIMULANT,INCLUDE,D1,not a US ADHD salt; never PS or SS
+LISDEXAMFETAMINE,lisdexamfetamine,STIMULANT,INCLUDE,,seed ingredient
+LISDEXAMFETAMINE DIMESYLATE,lisdexamfetamine,STIMULANT,INCLUDE,,lisdexamfetamine salt
+METHAMPHETAMINE,methamphetamine,STIMULANT,EXCLUDE,D2,seed ingredient but the plain name is mostly illicit use; qualifies only through the Desoxyn alias
+METHAMPHETAMINE HYDROCHLORIDE,methamphetamine,STIMULANT,EXCLUDE,D2,Rx salt (Desoxyn) but also illicit; qualifies only through the Desoxyn alias
+METHAMPHETAMINE SACCHARATE,methamphetamine,STIMULANT,EXCLUDE,D2,legacy salt; product unclear
+METHYLPHENIDATE,methylphenidate,STIMULANT,INCLUDE,,seed ingredient
+METHYLPHENIDATE HYDROCHLORIDE,methylphenidate,STIMULANT,INCLUDE,,methylphenidate salt
+METHYLPHENIDATE ACID,methylphenidate,STIMULANT,INCLUDE,D1,unusual coding (possibly the ritalinic acid metabolite)
+DEXMETHYLPHENIDATE,dexmethylphenidate,STIMULANT,INCLUDE,,seed ingredient
+DEXMETHYLPHENIDATE HYDROCHLORIDE,dexmethylphenidate,STIMULANT,INCLUDE,,dexmethylphenidate salt
+SERDEXMETHYLPHENIDATE CHLORIDE,serdexmethylphenidate,STIMULANT,INCLUDE,,seed ingredient (prodrug in Azstarys)
+PEMOLINE,pemoline,STIMULANT,EXCLUDE,D3,withdrawn from the US market in 2005
+AMPHETAMINES NOS,amphetamine,STIMULANT,EXCLUDE,D4,unspecified amphetamine; prescription or illicit cannot be told apart
+ATOMOXETINE,atomoxetine,NONSTIMULANT,INCLUDE,,seed ingredient
+ATOMOXETINE HYDROCHLORIDE,atomoxetine,NONSTIMULANT,INCLUDE,,atomoxetine salt
+VILOXAZINE,viloxazine,NONSTIMULANT,INCLUDE,,seed ingredient
+VILOXAZINE HYDROCHLORIDE,viloxazine,NONSTIMULANT,INCLUDE,,viloxazine salt
+GUANFACINE,guanfacine,ALPHA2,CONDITIONAL,D6,also an antihypertensive; qualifies only with a drug-linked ADHD indication or an accepted ER product name
+GUANFACINE HYDROCHLORIDE,guanfacine,ALPHA2,CONDITIONAL,D6,also an antihypertensive; qualifies only with a drug-linked ADHD indication or an accepted ER product name
+CLONIDINE,clonidine,ALPHA2,CONDITIONAL,D6,also an antihypertensive; qualifies only with a drug-linked ADHD indication or an accepted ER product name
+CLONIDINE HYDROCHLORIDE,clonidine,ALPHA2,CONDITIONAL,D6,also an antihypertensive; qualifies only with a drug-linked ADHD indication or an accepted ER product name
+APRACLONIDINE HYDROCHLORIDE,apraclonidine,NONE,EXCLUDE,,ophthalmic alpha-2 agonist; not an ADHD medicine
+MODAFINIL,modafinil,NONE,EXCLUDE,D5,wake-promoting agent; not approved for ADHD
+ARMODAFINIL,armodafinil,NONE,EXCLUDE,D5,wake-promoting agent; not approved for ADHD
+SOLRIAMFETOL,solriamfetol,NONE,EXCLUDE,D5,wake-promoting agent; not approved for ADHD
+SOLRIAMFETOL HYDROCHLORIDE,solriamfetol,NONE,EXCLUDE,D5,wake-promoting agent; not approved for ADHD
+PITOLISANT,pitolisant,NONE,EXCLUDE,D5,wake-promoting agent; not approved for ADHD
+PITOLISANT HYDROCHLORIDE,pitolisant,NONE,EXCLUDE,D5,wake-promoting agent; not approved for ADHD
+MAZINDOL,mazindol,NONE,EXCLUDE,,anorectic; not approved for ADHD in the US
+LEVMETAMFETAMINE,levmetamfetamine,NONE,EXCLUDE,,OTC nasal decongestant
+HYDROXYAMPHETAMINE,hydroxyamphetamine,NONE,EXCLUDE,,ophthalmic mydriatic
+HYDROXYAMPHETAMINE HYDROBROMIDE,hydroxyamphetamine,NONE,EXCLUDE,,ophthalmic mydriatic
+TENAMFETAMINE,tenamfetamine,NONE,EXCLUDE,,illicit substance (MDA)
+ETILAMFETAMINE HYDROCHLORIDE,etilamfetamine,NONE,EXCLUDE,,not a US ADHD medicine
+4-METHOXYAMPHETAMINE,4-methoxyamphetamine,NONE,EXCLUDE,,illicit substance
+4-METHOXYMETHAMPHETAMINE,4-methoxymethamphetamine,NONE,EXCLUDE,,illicit substance
+"2,5-DIMETHOXY-4-METHYLAMPHETAMINE","2,5-dimethoxy-4-methylamphetamine",NONE,EXCLUDE,,illicit substance
+2-FLUOROMETHAMPHETAMINE,2-fluoromethamphetamine,NONE,EXCLUDE,,illicit substance
+3-FLUOROMETHAMPHETAMINE,3-fluoromethamphetamine,NONE,EXCLUDE,,illicit substance
+4-FLUOROMETHYLPHENIDATE,4-fluoromethylphenidate,NONE,EXCLUDE,,illicit substance

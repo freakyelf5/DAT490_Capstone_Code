@@ -1,0 +1,91 @@
+alias,moieties,adhd_class,disposition,formulation,overrides_prod_ai,decision,basis,note
+ADDERALL,amphetamine|dextroamphetamine,STIMULANT,INCLUDE,,N,,US brand,mixed amphetamine salts; XR in the name marks ER
+MYDAYIS,amphetamine|dextroamphetamine,STIMULANT,INCLUDE,ER,N,,US brand,mixed amphetamine salts
+EVEKEO,amphetamine,STIMULANT,INCLUDE,,N,,US brand,
+ADZENYS,amphetamine,STIMULANT,INCLUDE,ER,N,,US brand,
+DYANAVEL,amphetamine,STIMULANT,INCLUDE,ER,N,,US brand,
+AMPHETAMINE,amphetamine,STIMULANT,INCLUDE,,N,,ingredient,
+AMFETAMINE,amphetamine,STIMULANT,INCLUDE,,N,,INN spelling,
+AMPHET,amphetamine,STIMULANT,INCLUDE,,N,,abbreviation,
+D AMPHETAMINE,dextroamphetamine,STIMULANT,INCLUDE,,N,,abbreviation,matched before AMPHETAMINE
+DEXTROAMPHETAMINE,dextroamphetamine,STIMULANT,INCLUDE,,N,,ingredient,
+DEXAMFETAMINE,dextroamphetamine,STIMULANT,INCLUDE,,N,,INN spelling,
+DEXAMPHETAMINE,dextroamphetamine,STIMULANT,INCLUDE,,N,,spelling variant,
+DEXTROAMPHET,dextroamphetamine,STIMULANT,INCLUDE,,N,,abbreviation,
+DEXTROAMPH,dextroamphetamine,STIMULANT,INCLUDE,,N,,abbreviation,
+DEXTR,dextroamphetamine,STIMULANT,INCLUDE,,N,,abbreviation,only together with an amphetamine alias
+DEXEDRINE,dextroamphetamine,STIMULANT,INCLUDE,,N,,US brand,
+ZENZEDI,dextroamphetamine,STIMULANT,INCLUDE,,N,,US brand,
+PROCENTRA,dextroamphetamine,STIMULANT,INCLUDE,,N,,US brand,
+XELSTRYM,dextroamphetamine,STIMULANT,INCLUDE,ER,N,,US brand,transdermal
+ATTENTIN,dextroamphetamine,STIMULANT,INCLUDE,,N,,non-US brand,
+LISDEXAMFETAMINE,lisdexamfetamine,STIMULANT,INCLUDE,,N,,ingredient,
+LISDEXAMFETAMIN,lisdexamfetamine,STIMULANT,INCLUDE,,N,,spelling variant,
+VYVANSE,lisdexamfetamine,STIMULANT,INCLUDE,,N,,US brand,
+ELVANSE,lisdexamfetamine,STIMULANT,INCLUDE,,N,,non-US brand,
+VENVANSE,lisdexamfetamine,STIMULANT,INCLUDE,,N,,non-US brand,
+DESOXYN,methamphetamine,STIMULANT,INCLUDE,,Y,D2,US brand,the only name under which methamphetamine qualifies
+METHAMPHETAMINE,methamphetamine,STIMULANT,EXCLUDE,,N,D2,ingredient,plain name is mostly illicit use; only DESOXYN qualifies
+METHYLPHENIDATE,methylphenidate,STIMULANT,INCLUDE,,N,,ingredient,
+METHYLPHENIDAT,methylphenidate,STIMULANT,INCLUDE,,N,,spelling variant,
+METHYLPHENID,methylphenidate,STIMULANT,INCLUDE,,N,,abbreviation,
+METHYL PHENIDATE,methylphenidate,STIMULANT,INCLUDE,,N,,spelling variant,
+METILFENIDATO,methylphenidate,STIMULANT,INCLUDE,,N,,non-English spelling,
+RITALIN,methylphenidate,STIMULANT,INCLUDE,,N,,US brand,LA in the name marks ER
+RITALINA,methylphenidate,STIMULANT,INCLUDE,,N,,non-US brand,
+CONCERTA,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+METADATE,methylphenidate,STIMULANT,INCLUDE,,N,,US brand,CD and ER in the name mark ER
+METHYLIN,methylphenidate,STIMULANT,INCLUDE,,N,,US brand,
+DAYTRANA,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,transdermal
+QUILLIVANT,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+QUILLICHEW,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+COTEMPLA,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+APTENSIO,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+ADHANSIA,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+JORNAY,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+RELEXXII,methylphenidate,STIMULANT,INCLUDE,ER,N,,US brand,
+MEDIKINET,methylphenidate,STIMULANT,INCLUDE,,N,,non-US brand,
+EQUASYM,methylphenidate,STIMULANT,INCLUDE,,N,,non-US brand,
+BIPHENTIN,methylphenidate,STIMULANT,INCLUDE,ER,N,,non-US brand,
+FOQUEST,methylphenidate,STIMULANT,INCLUDE,ER,N,,non-US brand,
+DEXMETHYLPHENIDATE,dexmethylphenidate,STIMULANT,INCLUDE,,N,,ingredient,
+DEXMETHYLPHEN,dexmethylphenidate,STIMULANT,INCLUDE,,N,,abbreviation,
+D METHYLPHENIDATE,dexmethylphenidate,STIMULANT,INCLUDE,,N,,abbreviation,matched before METHYLPHENIDATE
+FOCALIN,dexmethylphenidate,STIMULANT,INCLUDE,,N,,US brand,XR in the name marks ER
+AZSTARYS,serdexmethylphenidate|dexmethylphenidate,STIMULANT,INCLUDE,,N,,US brand,combination through the ingredient bridge
+PEMOLINE,pemoline,STIMULANT,EXCLUDE,,N,D3,ingredient,withdrawn from the US market in 2005
+CYLERT,pemoline,STIMULANT,EXCLUDE,,N,D3,US brand (withdrawn),withdrawn from the US market in 2005
+ATOMOXETINE,atomoxetine,NONSTIMULANT,INCLUDE,,N,,ingredient,
+ATOMOXETINA,atomoxetine,NONSTIMULANT,INCLUDE,,N,,non-English spelling,
+ATOMOXETIN,atomoxetine,NONSTIMULANT,INCLUDE,,N,,spelling variant,
+STRATTERA,atomoxetine,NONSTIMULANT,INCLUDE,,N,,US brand,
+STRATTER,atomoxetine,NONSTIMULANT,INCLUDE,,N,,misspelling,
+VILOXAZINE,viloxazine,NONSTIMULANT,INCLUDE,,N,,ingredient,
+QELBREE,viloxazine,NONSTIMULANT,INCLUDE,ER,N,,US brand,
+GUANFACINE,guanfacine,ALPHA2,CONDITIONAL,,N,D6,ingredient,ER only if the name says ER or XR
+INTUNIV,guanfacine,ALPHA2,INCLUDE,ER,Y,D6,US brand,ADHD-labelled ER product; accepted by name
+TENEX,guanfacine,ALPHA2,CONDITIONAL,IR,N,D6,US brand,IR antihypertensive brand
+CLONIDINE,clonidine,ALPHA2,CONDITIONAL,,N,D6,ingredient,ER only if the name says ER or XR
+CLONIDINA,clonidine,ALPHA2,CONDITIONAL,,N,D6,non-English spelling,
+KAPVAY,clonidine,ALPHA2,INCLUDE,ER,Y,D6,US brand,ADHD-labelled ER product; accepted by name
+ONYDA,clonidine,ALPHA2,INCLUDE,ER,Y,D6,US brand,ADHD-labelled ER suspension; accepted by name
+CATAPRES,clonidine,ALPHA2,CONDITIONAL,,N,D6,US brand,antihypertensive (tablet and patch)
+NEXICLON,clonidine,ALPHA2,CONDITIONAL,ER,N,D6,US brand,ER antihypertensive
+DIXARIT,clonidine,ALPHA2,CONDITIONAL,,N,D6,non-US brand,
+APRACLONIDINE,apraclonidine,NONE,EXCLUDE,,N,,ingredient,ophthalmic
+IOPIDINE,apraclonidine,NONE,EXCLUDE,,N,,US brand,ophthalmic
+SUNOSI,solriamfetol,NONE,EXCLUDE,,N,D5,US brand,not an ADHD medicine
+PROVIGIL,modafinil,NONE,EXCLUDE,,N,D5,US brand,not an ADHD medicine
+NUVIGIL,armodafinil,NONE,EXCLUDE,,N,D5,US brand,not an ADHD medicine
+WAKIX,pitolisant,NONE,EXCLUDE,,N,D5,US brand,not an ADHD medicine
+DEXTROSTAT,dextroamphetamine,STIMULANT,INCLUDE,,N,,US brand (discontinued),
+BENZEDRINE,amphetamine,STIMULANT,INCLUDE,,N,,historical brand,
+ARYNTA,lisdexamfetamine,STIMULANT,INCLUDE,,N,,non-US brand,
+JAVADIN,clonidine,ALPHA2,CONDITIONAL,,N,D6,non-US brand,
+DURACLON,clonidine,NONE,EXCLUDE,injection,Y,,US brand,epidural clonidine for pain; overrides prod_ai
+MODAFINIL,modafinil,NONE,EXCLUDE,,N,D5,ingredient,not an ADHD medicine
+ARMODAFINIL,armodafinil,NONE,EXCLUDE,,N,D5,ingredient,not an ADHD medicine
+SOLRIAMFETOL,solriamfetol,NONE,EXCLUDE,,N,D5,ingredient,not an ADHD medicine
+PITOLISANT,pitolisant,NONE,EXCLUDE,,N,D5,ingredient,not an ADHD medicine
+CATAPRESAN,clonidine,ALPHA2,CONDITIONAL,,N,D6,non-US brand,
+CATAPRESSAN,clonidine,ALPHA2,CONDITIONAL,,N,D6,non-US brand,
