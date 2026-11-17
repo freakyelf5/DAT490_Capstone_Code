@@ -1,0 +1,12 @@
+# Data and outputs stay off Git: FDA ZIPs, databases and generated results
+*.zip
+*.duckdb
+*.duckdb.wal
+results/
+csv/
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/

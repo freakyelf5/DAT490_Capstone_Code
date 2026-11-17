@@ -1,0 +1,21 @@
+[project]
+name = "dat490-faers-adhd"
+version = "1.0.0"
+description = "DAT 490 capstone: FDA FAERS data pipeline for ADHD medication adverse event reports"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["duckdb==1.4.5"]
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "ruff==0.14.1"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["Colab_Notebooks"]  # the team's notebooks are kept as written
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+per-file-ignores = { "pipeline/*" = ["B905"] }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
