@@ -18,8 +18,6 @@ This repository covers the data work: ingestion, verification, munging, the
 research-question datasets, the data dictionary and the rules behind them. The
 analyses and models that use these datasets are described in the final report.
 
-**Team:** Dustin Johnson (team lead), Rozaane Johnson, Kassie Shippey, Leonard.
-
 ## What is in the repository
 
 | Stage | Script | What it does | Rules |
