@@ -1,0 +1,14 @@
+list_version,tier,indi_pt,note,status
+v0.1,adhd,attention deficit hyperactivity disorder,MedDRA PT,OWNER_ACCEPTED
+v0.1,adhd,attention deficit/hyperactivity disorder,spelling variant seen in coded text; verify against the MedDRA version in use,OWNER_ACCEPTED
+v0.1,adhd,attention deficit disorder,lower-level term under the ADHD PT; verify,OWNER_ACCEPTED
+v0.1,adhd,attention deficit disorder with hyperactivity,lower-level term under the ADHD PT; verify,OWNER_ACCEPTED
+v0.1,adhd,attention deficit disorder without hyperactivity,lower-level term under the ADHD PT; verify,OWNER_ACCEPTED
+v0.1,adhd,hyperkinetic syndrome,older lower-level term under the ADHD PT; verify,OWNER_ACCEPTED
+v0.1,related,disturbance in attention,symptom only; never confirms ADHD,OWNER_ACCEPTED
+v0.1,related,psychomotor hyperactivity,symptom only; never confirms ADHD,OWNER_ACCEPTED
+v0.1,related,impulsive behaviour,symptom only; never confirms ADHD,OWNER_ACCEPTED
+v0.1,related,minimal brain dysfunction,historical term; never confirms ADHD,OWNER_ACCEPTED
+v0.1,unknown,product used for unknown indication,MedDRA PT meaning no indication information,OWNER_ACCEPTED
+v0.1,unknown,drug use for unknown indication,lower-level term meaning no indication information,OWNER_ACCEPTED
+v0.1,unknown,ill-defined disorder,MedDRA PT used when no specific indication is given (owner decision B3),OWNER_ACCEPTED

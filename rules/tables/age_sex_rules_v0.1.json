@@ -1,0 +1,147 @@
+{
+  "rule_version": "DQ-012-age-sex-weight-v0.1",
+  "status": "OWNER_ACCEPTED",
+  "issue": "DQ-012",
+  "decision": "DQD-046 (proposal), DQD-056 (owner acceptance 2026-10-29)",
+  "amount_pattern": "-?[0-9]+(\\.[0-9]+)?",
+  "amount_pattern_note": "Exact match on the raw text: no trimming, comma decimals or case folding. Anything else is UNPARSEABLE_AMOUNT and stays unset.",
+  "age_units": {
+    "YR": {
+      "label": "Year",
+      "multiply": 1.0,
+      "divide": 1.0
+    },
+    "DEC": {
+      "label": "Decade",
+      "multiply": 10.0,
+      "divide": 1.0
+    },
+    "MON": {
+      "label": "Month",
+      "multiply": 1.0,
+      "divide": 12.0
+    },
+    "WK": {
+      "label": "Week",
+      "multiply": 7.0,
+      "divide": 365.25
+    },
+    "DY": {
+      "label": "Day",
+      "multiply": 1.0,
+      "divide": 365.25
+    },
+    "HR": {
+      "label": "Hour",
+      "multiply": 1.0,
+      "divide": 8766.0
+    }
+  },
+  "age_unit_convention": "years = amount * multiply / divide. One year = 365.25 days = 8,766 hours; one month = 1/12 year; one week = 7 days. Labels are the FDA source list (ASC D.1, FAQ Q6).",
+  "age_plausible_years": {
+    "min_inclusive": 0.0,
+    "max_inclusive": 120.0
+  },
+  "age_plausibility_note": "Zero is valid (FAQ Q52: neonates). Negative values and values above 120 years are flagged, kept and not banded; nothing is winsorized or set to zero. FAQ Q52 (2021Q4): the modernized system records unborn patients as age 0 rather than a negative age, so a negative age before 2021Q4 is flagged BELOW_MIN, not reinterpreted.",
+  "age_band_primary": [
+    {
+      "band": "UNDER_18",
+      "min_inclusive": 0.0,
+      "max_exclusive": 18.0
+    },
+    {
+      "band": "ADULT_18_PLUS",
+      "min_inclusive": 18.0,
+      "max_exclusive": null
+    }
+  ],
+  "age_band_fine_status": "OWNER_ACCEPTED",
+  "age_band_fine": [
+    {
+      "band": "0_5",
+      "min_inclusive": 0.0,
+      "max_exclusive": 6.0
+    },
+    {
+      "band": "6_11",
+      "min_inclusive": 6.0,
+      "max_exclusive": 12.0
+    },
+    {
+      "band": "12_17",
+      "min_inclusive": 12.0,
+      "max_exclusive": 18.0
+    },
+    {
+      "band": "18_25",
+      "min_inclusive": 18.0,
+      "max_exclusive": 26.0
+    },
+    {
+      "band": "26_44",
+      "min_inclusive": 26.0,
+      "max_exclusive": 45.0
+    },
+    {
+      "band": "45_64",
+      "min_inclusive": 45.0,
+      "max_exclusive": 65.0
+    },
+    {
+      "band": "65_PLUS",
+      "min_inclusive": 65.0,
+      "max_exclusive": null
+    }
+  ],
+  "age_grp_codes": {
+    "N": "Neonate",
+    "I": "Infant",
+    "C": "Child",
+    "T": "Adolescent",
+    "A": "Adult",
+    "E": "Elderly"
+  },
+  "age_grp_note": "age_grp is reported, not derived; it has no numeric bounds and never fills a missing age or band.",
+  "age_grp_primary_fallback": {
+    "N": "UNDER_18",
+    "I": "UNDER_18",
+    "C": "UNDER_18",
+    "T": "UNDER_18",
+    "A": "ADULT_18_PLUS",
+    "E": "ADULT_18_PLUS"
+  },
+  "age_grp_primary_fallback_note": "Owner decision A5 (DQD-056): a separate column age_band_primary_or_group uses the numeric band when age is VALID, otherwise this age_grp mapping. age_band_primary itself never uses age_grp. For sensitivity analyses.",
+  "sex_codes": {
+    "F": "F",
+    "M": "M",
+    "UNK": "UNKNOWN",
+    "NS": "UNKNOWN"
+  },
+  "sex_note": "Exact codes only. UNK (reported unknown) and NS (Not Specified, listed for GNDR_COD in the 2014Q1 ASC_NTS only) both map to UNKNOWN but keep their own statuses; empty (not reported) and an absent column stay separate states. Unlisted codes are kept and left unset. No imputation and no gender inference.",
+  "sex_header_renames": [
+    "gndr_cod"
+  ],
+  "sex_header_rename_note": "Historical quarters before 2014Q3 carry the sex code under the header gndr_cod (README revision history 2014Q3). A row uses gndr_cod only when its sex column is NULL (header absent); sex_source_field records which header was read.",
+  "weight_units": {
+    "KG": {
+      "label": "Kilograms",
+      "multiply": 1.0,
+      "divide": 1.0
+    },
+    "LBS": {
+      "label": "Pounds",
+      "multiply": 0.45359237,
+      "divide": 1.0
+    },
+    "GMS": {
+      "label": "Grams",
+      "multiply": 1.0,
+      "divide": 1000.0
+    }
+  },
+  "weight_plausible_kg": {
+    "min_exclusive": 0.0,
+    "max_inclusive": 650.0
+  },
+  "weight_plausibility_note": "Zero or negative and above 650 kg are flagged, kept and left out of analysis use; nothing is replaced."
+}

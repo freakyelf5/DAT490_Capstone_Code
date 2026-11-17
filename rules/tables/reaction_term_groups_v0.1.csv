@@ -1,0 +1,418 @@
+list_version,group,subgroup,tier,pt,note,status
+v0.1,cardiovascular,blood_pressure_increased,narrow,hypertension,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,blood pressure increased,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,blood pressure systolic increased,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,blood pressure diastolic increased,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,hypertensive crisis,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,hypertensive emergency,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,hypertensive urgency,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,malignant hypertension,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,accelerated hypertension,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,systolic hypertension,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,labile hypertension,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,narrow,hypertensive encephalopathy,,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,blood pressure fluctuation,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,blood pressure abnormal,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,blood pressure systolic abnormal,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,blood pressure diastolic abnormal,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,labile blood pressure,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,blood pressure inadequately controlled,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,orthostatic hypertension,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,essential hypertension,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,blood_pressure_increased,broad,hypertensive heart disease,nonspecific direction or possibly pre-existing condition,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,tachycardia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,sinus tachycardia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,heart rate increased,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,palpitations,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,atrial fibrillation,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,atrial flutter,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,atrial tachycardia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,supraventricular tachycardia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,tachycardia paroxysmal,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,arrhythmia supraventricular,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,ventricular tachycardia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,ventricular fibrillation,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,ventricular arrhythmia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,ventricular tachyarrhythmia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,tachyarrhythmia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,arrhythmic storm,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,arrhythmia,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,heart rate irregular,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,extrasystoles,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,ventricular extrasystoles,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,supraventricular extrasystoles,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,torsade de pointes,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,electrocardiogram qt prolonged,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,narrow,long qt syndrome,,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,cardiac flutter,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,cardiac fibrillation,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,heart rate abnormal,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,sinus arrhythmia,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,postural orthostatic tachycardia syndrome,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,electrocardiogram abnormal,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,electrocardiogram qt interval abnormal,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,tachyarrhythmia,broad,electrocardiogram qrs complex prolonged,nonspecific rhythm or ECG term,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,bradycardia,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,sinus bradycardia,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,heart rate decreased,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,bradyarrhythmia,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,atrioventricular block,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,atrioventricular block first degree,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,atrioventricular block second degree,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,atrioventricular block complete,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,narrow,sinoatrial block,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,broad,bundle branch block,,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,broad,bundle branch block right,,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,broad,bundle branch block left,,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,broad,conduction disorder,,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,broad,nodal arrhythmia,,OWNER_APPROVED
+v0.1,cardiovascular,bradyarrhythmia_conduction,broad,electrocardiogram pr prolongation,,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,narrow,hypotension,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,narrow,blood pressure decreased,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,narrow,blood pressure systolic decreased,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,narrow,blood pressure diastolic decreased,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,narrow,orthostatic hypotension,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,narrow,syncope,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,narrow,presyncope,alpha-2 agonist nonstimulant signal,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,broad,blood pressure orthostatic decreased,nonspecific; loss of consciousness has many causes,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,broad,circulatory collapse,nonspecific; loss of consciousness has many causes,OWNER_APPROVED
+v0.1,cardiovascular,hypotension_syncope,broad,loss of consciousness,nonspecific; loss of consciousness has many causes,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,myocardial infarction,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,acute myocardial infarction,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,silent myocardial infarction,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,angina pectoris,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,angina unstable,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,prinzmetal angina,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,acute coronary syndrome,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,myocardial ischaemia,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,coronary artery occlusion,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,arteriospasm coronary,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,coronary artery dissection,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,coronary artery thrombosis,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,narrow,coronary artery embolism,,OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,chest pain,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,chest discomfort,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,coronary artery disease,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,arteriosclerosis coronary artery,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,coronary artery stenosis,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,myocardial injury,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,myocardial necrosis marker increased,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,troponin increased,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,electrocardiogram st segment elevation,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,ischaemic_heart,broad,electrocardiogram st segment depression,"symptom, chronic disease or marker only",OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,cerebrovascular accident,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,ischaemic stroke,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,haemorrhagic stroke,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,transient ischaemic attack,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,cerebral infarction,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,cerebral haemorrhage,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,haemorrhage intracranial,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,subarachnoid haemorrhage,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,cerebral ischaemia,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,embolic stroke,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,thrombotic stroke,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,lacunar infarction,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,lacunar stroke,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,cerebellar infarction,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,brain stem stroke,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,reversible cerebral vasoconstriction syndrome,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,narrow,cerebral vasoconstriction,,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,broad,cerebrovascular disorder,venous or nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,broad,cerebral thrombosis,venous or nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,broad,cerebral venous sinus thrombosis,venous or nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,broad,cerebral artery embolism,venous or nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,cerebrovascular,broad,cerebral artery thrombosis,venous or nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,cardiac_arrest_sudden_death,narrow,cardiac arrest,also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,cardiovascular,cardiac_arrest_sudden_death,narrow,cardio-respiratory arrest,also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,cardiovascular,cardiac_arrest_sudden_death,narrow,sudden death,also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,cardiovascular,cardiac_arrest_sudden_death,narrow,sudden cardiac death,also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,cardiovascular,cardiac_arrest_sudden_death,narrow,cardiac death,also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,cardiomyopathy,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,stress cardiomyopathy,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,toxic cardiomyopathy,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,dilated cardiomyopathy,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,congestive cardiomyopathy,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,arrhythmia induced cardiomyopathy,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,cardiac failure,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,cardiac failure congestive,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,cardiac failure acute,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,left ventricular dysfunction,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,narrow,ejection fraction decreased,,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,broad,myocarditis,nonspecific or other mechanism,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,broad,cardiotoxicity,nonspecific or other mechanism,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,broad,cardiomegaly,nonspecific or other mechanism,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,broad,left ventricular hypertrophy,nonspecific or other mechanism,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,broad,cardiac dysfunction,nonspecific or other mechanism,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,broad,cardiac disorder,nonspecific or other mechanism,OWNER_APPROVED
+v0.1,cardiovascular,cardiomyopathy_heart_failure,broad,cardiovascular disorder,nonspecific or other mechanism,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,narrow,raynaud's phenomenon,stimulant label warning: peripheral vasculopathy including Raynaud's,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,narrow,peripheral coldness,stimulant label warning: peripheral vasculopathy including Raynaud's,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,narrow,vasospasm,stimulant label warning: peripheral vasculopathy including Raynaud's,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,narrow,vasoconstriction,stimulant label warning: peripheral vasculopathy including Raynaud's,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,narrow,peripheral ischaemia,stimulant label warning: peripheral vasculopathy including Raynaud's,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,broad,peripheral vascular disorder,nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,broad,skin discolouration,nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,peripheral_vasculopathy,broad,peripheral circulatory failure,nonspecific,OWNER_APPROVED
+v0.1,cardiovascular,pulmonary_hypertension,broad,pulmonary arterial hypertension,amphetamine-associated; low prior for ADHD doses,OWNER_APPROVED
+v0.1,cardiovascular,pulmonary_hypertension,broad,pulmonary hypertension,amphetamine-associated; low prior for ADHD doses,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,psychotic disorder,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,acute psychosis,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,psychotic symptom,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,psychotic behaviour,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,substance-induced psychotic disorder,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,hallucination,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,"hallucination, visual",,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,"hallucination, auditory",,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,"hallucination, tactile",,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,"hallucination, olfactory",,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,"hallucinations, mixed",,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,delusion,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,persecutory delusion,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,delusion of grandeur,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,delusion of parasitosis,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,delusional perception,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,"delusional disorder, unspecified type",,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,"delusional disorder, persecutory type",,OWNER_APPROVED
+v0.1,psychiatric,psychosis,narrow,paranoia,,OWNER_APPROVED
+v0.1,psychiatric,psychosis,broad,schizophrenia,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,psychosis,broad,schizoaffective disorder,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,psychosis,broad,schizoaffective disorder bipolar type,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,psychosis,broad,hypnagogic hallucination,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,psychosis,broad,formication,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,psychosis,broad,rebound psychosis,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,psychosis,broad,thinking abnormal,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,mania,narrow,mania,,OWNER_APPROVED
+v0.1,psychiatric,mania,narrow,hypomania,,OWNER_APPROVED
+v0.1,psychiatric,mania,narrow,manic symptom,,OWNER_APPROVED
+v0.1,psychiatric,mania,broad,bipolar disorder,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,mania,broad,bipolar i disorder,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,mania,broad,bipolar ii disorder,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,mania,broad,euphoric mood,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,mania,broad,logorrhoea,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,mania,broad,psychomotor hyperactivity,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,mania,broad,energy increased,pre-existing diagnosis or nonspecific,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,suicidal ideation,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,suicide attempt,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,completed suicide,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,suicidal behaviour,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,depression suicidal,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,suspected suicide,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,suspected suicide attempt,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,suicide threat,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,intentional self-injury,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,self-injurious ideation,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,narrow,self-destructive behaviour,completed suicide is also on the RQ3 leakage list,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,broad,poisoning deliberate,intent may be self-harm or misuse,OWNER_APPROVED
+v0.1,psychiatric,suicidality_self_harm,broad,intentional overdose,intent may be self-harm or misuse,OWNER_APPROVED
+v0.1,psychiatric,depression,narrow,depression,,OWNER_APPROVED
+v0.1,psychiatric,depression,narrow,depressed mood,,OWNER_APPROVED
+v0.1,psychiatric,depression,narrow,major depression,,OWNER_APPROVED
+v0.1,psychiatric,depression,narrow,depressive symptom,,OWNER_APPROVED
+v0.1,psychiatric,depression,narrow,agitated depression,,OWNER_APPROVED
+v0.1,psychiatric,depression,narrow,persistent depressive disorder,,OWNER_APPROVED
+v0.1,psychiatric,depression,narrow,anhedonia,,OWNER_APPROVED
+v0.1,psychiatric,depression,broad,dysphoria,,OWNER_APPROVED
+v0.1,psychiatric,depression,broad,apathy,,OWNER_APPROVED
+v0.1,psychiatric,depression,broad,emotional poverty,,OWNER_APPROVED
+v0.1,psychiatric,depression,broad,crying,,OWNER_APPROVED
+v0.1,psychiatric,depression,broad,tearfulness,,OWNER_APPROVED
+v0.1,psychiatric,depression,broad,mixed anxiety and depressive disorder,,OWNER_APPROVED
+v0.1,psychiatric,depression,broad,adjustment disorder with depressed mood,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,anxiety,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,anxiety disorder,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,generalised anxiety disorder,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,panic attack,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,panic disorder,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,panic reaction,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,nervousness,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,narrow,feeling jittery,,OWNER_APPROVED
+v0.1,psychiatric,anxiety,broad,restlessness,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,anxiety,broad,tension,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,anxiety,broad,fear,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,anxiety,broad,social anxiety disorder,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,anxiety,broad,anticipatory anxiety,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,anxiety,broad,hypervigilance,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,narrow,aggression,,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,narrow,hostility,,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,narrow,anger,,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,narrow,homicidal ideation,,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,narrow,homicide,,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,narrow,violence-related symptom,,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,broad,irritability,nonspecific behaviour term,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,broad,agitation,nonspecific behaviour term,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,broad,abnormal behaviour,nonspecific behaviour term,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,broad,impulsive behaviour,nonspecific behaviour term,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,broad,antisocial behaviour,nonspecific behaviour term,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,broad,defiant behaviour,nonspecific behaviour term,OWNER_APPROVED
+v0.1,psychiatric,aggression_hostility,broad,behaviour disorder,nonspecific behaviour term,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,affect lability,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,mood swings,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,mood altered,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,emotional disorder,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,emotional distress,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,personality change,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,mental disorder,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,psychiatric symptom,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,psychiatric decompensation,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,mood_lability,broad,affective disorder,nonspecific; emotional distress is common in litigation-driven reports,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,narrow,insomnia,,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,narrow,initial insomnia,,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,narrow,middle insomnia,,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,narrow,terminal insomnia,,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,broad,sleep disorder,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,broad,poor quality sleep,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,broad,abnormal dreams,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,broad,nightmare,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,broad,sleep terror,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,insomnia_sleep,broad,sleep deficit,nonspecific,OWNER_APPROVED
+v0.1,psychiatric,tics_compulsions,broad,tic,label-listed for some products; reviewer to confirm,OWNER_APPROVED
+v0.1,psychiatric,tics_compulsions,broad,obsessive-compulsive disorder,label-listed for some products; reviewer to confirm,OWNER_APPROVED
+v0.1,psychiatric,tics_compulsions,broad,obsessive thoughts,label-listed for some products; reviewer to confirm,OWNER_APPROVED
+v0.1,psychiatric,tics_compulsions,broad,obsessive-compulsive symptom,label-listed for some products; reviewer to confirm,OWNER_APPROVED
+v0.1,psychiatric,tics_compulsions,broad,dermatillomania,label-listed for some products; reviewer to confirm,OWNER_APPROVED
+v0.1,psychiatric,tics_compulsions,broad,trichotillomania,label-listed for some products; reviewer to confirm,OWNER_APPROVED
+v0.1,psychiatric,tics_compulsions,broad,bruxism,label-listed for some products; reviewer to confirm,OWNER_APPROVED
+v0.1,psychiatric,delirium_confusion,broad,confusional state,often toxic or medical rather than psychiatric,OWNER_APPROVED
+v0.1,psychiatric,delirium_confusion,broad,delirium,often toxic or medical rather than psychiatric,OWNER_APPROVED
+v0.1,psychiatric,delirium_confusion,broad,disorientation,often toxic or medical rather than psychiatric,OWNER_APPROVED
+v0.1,psychiatric,delirium_confusion,broad,mental status changes,often toxic or medical rather than psychiatric,OWNER_APPROVED
+v0.1,dependence,dependence,narrow,drug dependence,,OWNER_APPROVED
+v0.1,dependence,dependence,narrow,dependence,,OWNER_APPROVED
+v0.1,dependence,dependence,narrow,substance dependence,,OWNER_APPROVED
+v0.1,dependence,dependence,broad,drug tolerance,tolerance can also mean loss of effect; overlaps ineffectiveness broad,OWNER_APPROVED
+v0.1,dependence,dependence,broad,drug tolerance increased,tolerance can also mean loss of effect; overlaps ineffectiveness broad,OWNER_APPROVED
+v0.1,dependence,dependence,broad,drug detoxification,tolerance can also mean loss of effect; overlaps ineffectiveness broad,OWNER_APPROVED
+v0.1,dependence,dependence,broad,drug withdrawal maintenance therapy,tolerance can also mean loss of effect; overlaps ineffectiveness broad,OWNER_APPROVED
+v0.1,abuse,abuse,narrow,drug abuse,,OWNER_APPROVED
+v0.1,abuse,abuse,narrow,substance abuse,,OWNER_APPROVED
+v0.1,abuse,abuse,narrow,drug abuser,,OWNER_APPROVED
+v0.1,abuse,abuse,narrow,substance abuser,,OWNER_APPROVED
+v0.1,misuse,misuse,narrow,intentional product misuse,,OWNER_APPROVED
+v0.1,misuse,misuse,narrow,drug diversion,,OWNER_APPROVED
+v0.1,misuse,misuse,narrow,prescription form tampering,,OWNER_APPROVED
+v0.1,misuse,misuse,narrow,illicit prescription attainment,,OWNER_APPROVED
+v0.1,misuse,misuse,narrow,prescription drug used without a prescription,,OWNER_APPROVED
+v0.1,misuse,misuse,broad,intentional product use issue,intent or route ambiguous; route never implies misuse alone,OWNER_APPROVED
+v0.1,misuse,misuse,broad,incorrect route of product administration,intent or route ambiguous; route never implies misuse alone,OWNER_APPROVED
+v0.1,misuse,misuse,broad,product administered from unauthorised provider,intent or route ambiguous; route never implies misuse alone,OWNER_APPROVED
+v0.1,misuse,misuse,broad,intentional product misuse to child,intent or route ambiguous; route never implies misuse alone,OWNER_APPROVED
+v0.1,addiction,use_disorder,narrow,drug use disorder,,OWNER_APPROVED
+v0.1,addiction,use_disorder,narrow,substance use disorder,,OWNER_APPROVED
+v0.1,addiction,use_disorder,broad,substance use,use or screen result without diagnosis,OWNER_APPROVED
+v0.1,addiction,use_disorder,broad,amphetamines positive,use or screen result without diagnosis,OWNER_APPROVED
+v0.1,addiction,use_disorder,broad,urine amphetamine positive,use or screen result without diagnosis,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,narrow,drug withdrawal syndrome,,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,narrow,withdrawal syndrome,,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,narrow,drug withdrawal headache,,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,narrow,drug withdrawal convulsions,,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,narrow,withdrawal catatonia,,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,narrow,rebound effect,,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,broad,withdrawal hypertension,neonatal term reflects in-utero exposure; analyse separately,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,broad,rebound psychosis,neonatal term reflects in-utero exposure; analyse separately,OWNER_APPROVED
+v0.1,withdrawal,withdrawal,broad,drug withdrawal syndrome neonatal,neonatal term reflects in-utero exposure; analyse separately,OWNER_APPROVED
+v0.1,overdose,overdose,narrow,overdose,,OWNER_APPROVED
+v0.1,overdose,overdose,narrow,accidental overdose,,OWNER_APPROVED
+v0.1,overdose,overdose,narrow,intentional overdose,,OWNER_APPROVED
+v0.1,overdose,overdose,broad,prescribed overdose,dosing error or multi-agent toxicity,OWNER_APPROVED
+v0.1,overdose,overdose,broad,toxicity to various agents,dosing error or multi-agent toxicity,OWNER_APPROVED
+v0.1,overdose,overdose,broad,poisoning,dosing error or multi-agent toxicity,OWNER_APPROVED
+v0.1,overdose,overdose,broad,poisoning deliberate,dosing error or multi-agent toxicity,OWNER_APPROVED
+v0.1,overdose,overdose,broad,extra dose administered,dosing error or multi-agent toxicity,OWNER_APPROVED
+v0.1,overdose,overdose,broad,accidental poisoning,dosing error or multi-agent toxicity,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,drug ineffective,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,drug effect less than expected,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,therapeutic response decreased,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,therapeutic response shortened,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,loss of therapeutic response,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,therapeutic product ineffective,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,product ineffective,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,therapeutic product effect decreased,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,therapeutic product effect incomplete,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,narrow,therapy non-responder,,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,treatment failure,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,therapeutic response changed,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,therapeutic response delayed,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,drug level below therapeutic,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,drug level decreased,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,drug tolerance,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,condition aggravated,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,attention deficit hyperactivity disorder,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,symptom recurrence,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,drug ineffective for unapproved indication,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,therapeutic product ineffective for unapproved indication,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,ineffectiveness,ineffectiveness,broad,product ineffective for unapproved use,ADHD as a reaction usually means symptoms returned or worsened; reviewer to confirm,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product quality issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,suspected product quality issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,poor quality product administered,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product formulation issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product physical issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product physical consistency issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product colour issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product size issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product shape issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product taste abnormal,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product odour abnormal,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,manufacturing issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,manufacturing materials issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,manufacturing production issue,,OWNER_APPROVED
+v0.1,product_quality_supply,product_quality,narrow,product quality control issue,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,product substitution issue,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,product substitution,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,product substitution error,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,product availability issue,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,suspected counterfeit product,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,counterfeit product administered,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,product counterfeit,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,narrow,product supply issue,,OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,broad,wrong product administered,"error, access or supply-chain term not specific to shortage",OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,broad,wrong product procured,"error, access or supply-chain term not specific to shortage",OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,broad,recalled product administered,"error, access or supply-chain term not specific to shortage",OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,broad,discontinued product administered,"error, access or supply-chain term not specific to shortage",OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,broad,manufacturing product shipping issue,"error, access or supply-chain term not specific to shortage",OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,broad,inability to afford medication,"error, access or supply-chain term not specific to shortage",OWNER_APPROVED
+v0.1,product_quality_supply,substitution_supply,broad,insurance issue,"error, access or supply-chain term not specific to shortage",OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,sudden death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,sudden cardiac death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,cardiac death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,completed suicide,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,brain death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,accidental death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,apparent death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,clinical death,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,encodes_outcome,narrow,hospitalisation,term restates the death or hospitalisation target,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,implies_life_threatening,broad,cardiac arrest,strongly implies a life-threatening code; sensitivity exclusion,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,implies_life_threatening,broad,cardio-respiratory arrest,strongly implies a life-threatening code; sensitivity exclusion,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,implies_life_threatening,broad,respiratory arrest,strongly implies a life-threatening code; sensitivity exclusion,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,implies_life_threatening,broad,ventricular fibrillation,strongly implies a life-threatening code; sensitivity exclusion,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,implies_life_threatening,broad,cardiogenic shock,strongly implies a life-threatening code; sensitivity exclusion,OWNER_APPROVED
+v0.1,rq3_outcome_leakage,implies_life_threatening,broad,shock,strongly implies a life-threatening code; sensitivity exclusion,OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,off label use,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,accidental exposure to product,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,accidental exposure to product by child,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,medication error,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,product dose omission issue,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,incorrect dose administered,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,inappropriate schedule of product administration,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,treatment noncompliance,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,drug screen positive,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,not_misuse,excluded,product use in unapproved indication,"error, off-label or nonadherence; not misuse, abuse or ineffectiveness by itself",OWNER_APPROVED
+v0.1,excluded,other_substance_withdrawal,excluded,alcohol withdrawal syndrome,withdrawal from a named non-ADHD substance,OWNER_APPROVED
+v0.1,excluded,other_substance_withdrawal,excluded,steroid withdrawal syndrome,withdrawal from a named non-ADHD substance,OWNER_APPROVED
+v0.1,excluded,other_substance_withdrawal,excluded,topical steroid withdrawal reaction,withdrawal from a named non-ADHD substance,OWNER_APPROVED
+v0.1,excluded,other_substance_withdrawal,excluded,antidepressant discontinuation syndrome,withdrawal from a named non-ADHD substance,OWNER_APPROVED
+v0.1,excluded,other_substance_withdrawal,excluded,dopamine agonist withdrawal syndrome,withdrawal from a named non-ADHD substance,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,nicotine dependence,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,steroid dependence,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,alcohol abuse,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,tobacco abuse,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,behavioural addiction,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,alcohol use disorder,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,tobacco use disorder,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,information technology use disorder,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,dependence on oxygen therapy,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,other_dependence,excluded,dependence on respirator,non-ADHD substance or non-drug dependence,OWNER_APPROVED
+v0.1,excluded,venous_thromboembolism,excluded,deep vein thrombosis,no stimulant mechanism; excluded from cardiovascular to keep the group interpretable,OWNER_APPROVED
+v0.1,excluded,venous_thromboembolism,excluded,pulmonary embolism,no stimulant mechanism; excluded from cardiovascular to keep the group interpretable,OWNER_APPROVED
+v0.1,excluded,venous_thromboembolism,excluded,thrombosis,no stimulant mechanism; excluded from cardiovascular to keep the group interpretable,OWNER_APPROVED
+v0.1,excluded,non_event,excluded,no adverse event,report states no event,OWNER_APPROVED

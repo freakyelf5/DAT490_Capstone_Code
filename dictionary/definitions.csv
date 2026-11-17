@@ -1,0 +1,280 @@
+table,column,type,meaning,rule
+raw.demo,,,"Raw DEMO rows: one per report (patient and report details), exactly as FDA published them. Every value is text.",../rules/ingestion.md
+raw.demo,primaryid,VARCHAR,Report ID (case ID plus version). Links a report's rows across the seven files.,../rules/case_selection.md
+raw.demo,caseid,VARCHAR,"Case ID, shared by every version of the case.",../rules/case_selection.md
+raw.demo,caseversion,VARCHAR,Version number of the report; the highest version of a case is kept.,../rules/case_selection.md
+raw.demo,i_f_code,VARCHAR,`I` initial report or `F` follow-up.,
+raw.demo,event_dt,VARCHAR,"Date the adverse event happened or began (`YYYYMMDD`, may be partial).",
+raw.demo,mfr_dt,VARCHAR,Date the manufacturer first received the case.,
+raw.demo,init_fda_dt,VARCHAR,Date FDA first received the case (`YYYYMMDD`). The study's time axis.,../rules/case_selection.md
+raw.demo,fda_dt,VARCHAR,Date FDA received this version. Not used.,
+raw.demo,rept_cod,VARCHAR,"Report type: `EXP` expedited, `PER` periodic, `DIR` sent directly to FDA (older files also `5DAY`, `30DAY`).",
+raw.demo,auth_num,VARCHAR,"Case number from a regulatory authority, when there is one (from 2014Q3).",
+raw.demo,mfr_num,VARCHAR,The manufacturer's own report number.,
+raw.demo,mfr_sndr,VARCHAR,Who sent the report (coded name).,
+raw.demo,lit_ref,VARCHAR,"Literature citation, when the case came from a published article (from 2014Q3).",
+raw.demo,age,VARCHAR,Age as reported.,../rules/demographics.md
+raw.demo,age_cod,VARCHAR,"Unit of `age`: `YR`, `MON`, `WK`, `DY`, `HR` or `DEC`.",../rules/demographics.md
+raw.demo,age_grp,VARCHAR,"Reported age group code (`N` neonate, `I` infant, `C` child, `T` adolescent, `A` adult, `E` elderly; from 2014Q3). Not used.",
+raw.demo,sex,VARCHAR,"Reported sex: `F`, `M`, `UNK` (from 2014Q3).",../rules/demographics.md
+raw.demo,gndr_cod,VARCHAR,Reported sex in files before 2014Q3 (same codes as `sex`).,../rules/demographics.md
+raw.demo,e_sub,VARCHAR,`Y` if the report was submitted electronically.,
+raw.demo,wt,VARCHAR,Weight as reported.,../rules/demographics.md
+raw.demo,wt_cod,VARCHAR,"Unit of `wt`: `KG`, `LBS` or `GMS`.",../rules/demographics.md
+raw.demo,rept_dt,VARCHAR,Date the report was sent.,
+raw.demo,to_mfr,VARCHAR,`Y` if a voluntary reporter also told the manufacturer.,
+raw.demo,occp_cod,VARCHAR,"Reporter's occupation: `MD`, `PH`, `OT` (other health professional), `LW` lawyer, `CN` consumer.",
+raw.demo,reporter_country,VARCHAR,Country of the reporter.,
+raw.demo,occr_country,VARCHAR,Country where the event happened.,../rules/case_selection.md
+raw.demo,source_quarter,VARCHAR,"FDA quarter file the row came from, such as `2023Q2`. Added by the loader.",../rules/ingestion.md
+raw.demo,line_no,BIGINT,Line number in that quarter's file (line 1 is the header). Added by the loader; used to break ties between copies of the same report.,../rules/ingestion.md
+raw.drug,,,Raw DRUG rows: one per drug listed on a report.,../rules/ingestion.md
+raw.drug,primaryid,VARCHAR,Report ID (case ID plus version). Links a report's rows across the seven files.,../rules/case_selection.md
+raw.drug,caseid,VARCHAR,"Case ID, shared by every version of the case.",../rules/case_selection.md
+raw.drug,drug_seq,VARCHAR,Drug number within the report; links to INDI and THER.,
+raw.drug,role_cod,VARCHAR,"Drug role: `PS` primary suspect, `SS` secondary suspect, `C` concomitant, `I` interacting.",../rules/study_groups.md
+raw.drug,drugname,VARCHAR,"Drug name as reported (brand or generic, free text).",../rules/adhd_drug_map.md
+raw.drug,prod_ai,VARCHAR,"Active ingredient(s), as coded by FDA (from 2014Q3).",../rules/adhd_drug_map.md
+raw.drug,val_vbm,VARCHAR,"Where `drugname` came from: `1` validated trade name, `2` verbatim text.",
+raw.drug,route,VARCHAR,Route of administration as reported (for example `Oral`).,../rules/rq_datasets.md
+raw.drug,dose_vbm,VARCHAR,Dose as free text.,
+raw.drug,cum_dose_chr,VARCHAR,Total dose taken up to the first reaction.,
+raw.drug,cum_dose_unit,VARCHAR,Unit of `cum_dose_chr`.,
+raw.drug,dechal,VARCHAR,"Dechallenge: did the reaction stop when the drug stopped? `Y`, `N`, `U` unknown, `D` does not apply.",
+raw.drug,rechal,VARCHAR,Rechallenge: did it come back when the drug restarted? Same codes.,
+raw.drug,lot_num,VARCHAR,Lot number of the product.,
+raw.drug,exp_dt,VARCHAR,Expiration date of the product.,
+raw.drug,nda_num,VARCHAR,"FDA application number (NDA, ANDA or BLA).",
+raw.drug,dose_amt,VARCHAR,Dose amount.,../rules/rq_datasets.md
+raw.drug,dose_unit,VARCHAR,Unit of `dose_amt`.,../rules/rq_datasets.md
+raw.drug,dose_form,VARCHAR,"Dosage form (tablet, capsule ...).",
+raw.drug,dose_freq,VARCHAR,How often (for example `QD` once a day).,
+raw.drug,source_quarter,VARCHAR,"FDA quarter file the row came from, such as `2023Q2`. Added by the loader.",../rules/ingestion.md
+raw.drug,line_no,BIGINT,Line number in that quarter's file (line 1 is the header). Added by the loader; used to break ties between copies of the same report.,../rules/ingestion.md
+raw.reac,,,Raw REAC rows: one per reaction (adverse event) term on a report.,../rules/ingestion.md
+raw.reac,primaryid,VARCHAR,Report ID (case ID plus version). Links a report's rows across the seven files.,../rules/case_selection.md
+raw.reac,caseid,VARCHAR,"Case ID, shared by every version of the case.",../rules/case_selection.md
+raw.reac,pt,VARCHAR,"Reaction, as a MedDRA Preferred Term.",../rules/event_groups.md
+raw.reac,drug_rec_act,VARCHAR,Reaction that came back when the drug was restarted.,
+raw.reac,source_quarter,VARCHAR,"FDA quarter file the row came from, such as `2023Q2`. Added by the loader.",../rules/ingestion.md
+raw.reac,line_no,BIGINT,Line number in that quarter's file (line 1 is the header). Added by the loader; used to break ties between copies of the same report.,../rules/ingestion.md
+raw.outc,,,Raw OUTC rows: one per serious outcome code on a report.,../rules/ingestion.md
+raw.outc,primaryid,VARCHAR,Report ID (case ID plus version). Links a report's rows across the seven files.,../rules/case_selection.md
+raw.outc,caseid,VARCHAR,"Case ID, shared by every version of the case.",../rules/case_selection.md
+raw.outc,outc_cod,VARCHAR,"Outcome code: `DE` death, `LT` life-threatening, `HO` hospitalization, `DS` disability, `CA` congenital anomaly, `RI` required intervention, `OT` other serious.",../rules/rq_datasets.md
+raw.outc,source_quarter,VARCHAR,"FDA quarter file the row came from, such as `2023Q2`. Added by the loader.",../rules/ingestion.md
+raw.outc,line_no,BIGINT,Line number in that quarter's file (line 1 is the header). Added by the loader; used to break ties between copies of the same report.,../rules/ingestion.md
+raw.indi,,,Raw INDI rows: one per indication (reason for use) of a drug.,../rules/ingestion.md
+raw.indi,primaryid,VARCHAR,Report ID (case ID plus version). Links a report's rows across the seven files.,../rules/case_selection.md
+raw.indi,caseid,VARCHAR,"Case ID, shared by every version of the case.",../rules/case_selection.md
+raw.indi,indi_drug_seq,VARCHAR,The `drug_seq` this indication belongs to.,../rules/adhd_indication.md
+raw.indi,indi_pt,VARCHAR,"Indication, as a MedDRA Preferred Term.",../rules/adhd_indication.md
+raw.indi,source_quarter,VARCHAR,"FDA quarter file the row came from, such as `2023Q2`. Added by the loader.",../rules/ingestion.md
+raw.indi,line_no,BIGINT,Line number in that quarter's file (line 1 is the header). Added by the loader; used to break ties between copies of the same report.,../rules/ingestion.md
+raw.ther,,,Raw THER rows: therapy start and end dates of a drug.,../rules/ingestion.md
+raw.ther,primaryid,VARCHAR,Report ID (case ID plus version). Links a report's rows across the seven files.,../rules/case_selection.md
+raw.ther,caseid,VARCHAR,"Case ID, shared by every version of the case.",../rules/case_selection.md
+raw.ther,dsg_drug_seq,VARCHAR,The `drug_seq` these dates belong to.,
+raw.ther,start_dt,VARCHAR,Therapy start date.,
+raw.ther,end_dt,VARCHAR,Therapy end date.,
+raw.ther,dur,VARCHAR,Therapy duration.,
+raw.ther,dur_cod,VARCHAR,Unit of `dur`.,
+raw.ther,source_quarter,VARCHAR,"FDA quarter file the row came from, such as `2023Q2`. Added by the loader.",../rules/ingestion.md
+raw.ther,line_no,BIGINT,Line number in that quarter's file (line 1 is the header). Added by the loader; used to break ties between copies of the same report.,../rules/ingestion.md
+raw.rpsr,,,Raw RPSR rows: who sent the report to FDA.,../rules/ingestion.md
+raw.rpsr,primaryid,VARCHAR,Report ID (case ID plus version). Links a report's rows across the seven files.,../rules/case_selection.md
+raw.rpsr,caseid,VARCHAR,"Case ID, shared by every version of the case.",../rules/case_selection.md
+raw.rpsr,rpsr_cod,VARCHAR,"Report source code (for example `CSM` consumer, `HP` health professional).",
+raw.rpsr,source_quarter,VARCHAR,"FDA quarter file the row came from, such as `2023Q2`. Added by the loader.",../rules/ingestion.md
+raw.rpsr,line_no,BIGINT,Line number in that quarter's file (line 1 is the header). Added by the loader; used to break ties between copies of the same report.,../rules/ingestion.md
+raw.deleted,,,Case numbers on FDA's deleted-case lists (in each ZIP from 2019 on). Every listed case is removed from the study.,../rules/case_selection.md
+raw.deleted,source_quarter,VARCHAR,Quarter ZIP whose list named the case.,../rules/ingestion.md
+raw.deleted,caseid,VARCHAR,Case number FDA deleted.,../rules/case_selection.md
+raw.load_log,,,"One row per quarter and file loaded: the loader's own record, used by verification.",../rules/verification.md
+raw.load_log,quarter,VARCHAR,Quarter loaded.,../rules/verification.md
+raw.load_log,family,VARCHAR,File family (`DEMO` ... `RPSR`).,../rules/verification.md
+raw.load_log,file,VARCHAR,File name inside the ZIP.,../rules/verification.md
+raw.load_log,rows,BIGINT,Data rows loaded from the file.,../rules/verification.md
+raw.load_log,cp1252_lines,BIGINT,Lines read as Windows-1252 because they were not valid UTF-8 (DQ-034).,../rules/ingestion.md
+drug_classes,,,"Every distinct (`prod_ai`, `drugname`) pair in the data that the drug map classifies as an ADHD medicine.",../rules/adhd_drug_map.md
+drug_classes,prod_ai,VARCHAR,"Reported active ingredient(s), as in raw DRUG.",../rules/adhd_drug_map.md
+drug_classes,drugname,VARCHAR,"Reported drug name, as in raw DRUG.",../rules/adhd_drug_map.md
+drug_classes,classes,VARCHAR[],"ADHD classes found: `STIMULANT`, `NONSTIMULANT`, `ALPHA2`.",../rules/adhd_drug_map.md
+drug_classes,disposition,VARCHAR,"`INCLUDE` (always counts) or `CONDITIONAL` (guanfacine, clonidine: counts only with an ADHD indication).",../rules/adhd_drug_map.md
+cases,,,"One row per kept case 2012Q4-2026Q2 across both databases: clean demographics, study group, event flags, serious outcomes and RQ3 predictors.",../rules/case_selection.md
+cases,caseid,VARCHAR,The case (one row per case).,../rules/case_selection.md
+cases,init_date,DATE,Date FDA first received the case (`init_fda_dt` as a date; missing if not a full valid date).,../rules/case_selection.md
+cases,age_years,DOUBLE,"Age in years, converted from the reported unit; missing when not reported or outside 0-120.",../rules/demographics.md
+cases,age_band,VARCHAR,"Age band from `age_years`: `0_5`, `6_11`, `12_17`, `18_25`, `26_44`, `45_64`, `65_PLUS`, or `UNKNOWN`.",../rules/demographics.md
+cases,sex,VARCHAR,"`F`, `M`, `UNKNOWN` (reported unknown) or `NOT_REPORTED`.",../rules/demographics.md
+cases,wt_kg,DOUBLE,"Weight in kilograms, converted from the reported unit; missing when not reported or outside 0-650 kg.",../rules/demographics.md
+cases,rq1_group,VARCHAR,"Study group: `STIMULANT`, `NONSTIMULANT` (includes alpha-2 agonists), `MULTI_ADHD_CLASS` (both, kept apart), or missing (not in the study group).",../rules/study_groups.md
+cases,rq1_group_confirmed,VARCHAR,"Same, counting only ADHD drugs whose own indication is ADHD (sensitivity check).",../rules/study_groups.md
+cases,alpha2,BOOLEAN,A suspect ADHD drug is an alpha-2 agonist (guanfacine or clonidine).,../rules/study_groups.md
+cases,concomitant_adhd,BOOLEAN,"An ADHD drug is listed as concomitant or interacting (background, not exposure).",../rules/study_groups.md
+cases,cardiovascular_narrow,BOOLEAN,"The case lists a narrow-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+cases,cardiovascular_broad,BOOLEAN,"The case lists a narrow- or broad-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+cases,psychiatric_narrow,BOOLEAN,"The case lists a narrow-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+cases,psychiatric_broad,BOOLEAN,"The case lists a narrow- or broad-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+cases,dependence_narrow,BOOLEAN,The case lists a narrow-list term for drug dependence.,../rules/event_groups.md
+cases,dependence_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug dependence.,../rules/event_groups.md
+cases,abuse_narrow,BOOLEAN,The case lists a narrow-list term for drug abuse.,../rules/event_groups.md
+cases,abuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug abuse.,../rules/event_groups.md
+cases,misuse_narrow,BOOLEAN,The case lists a narrow-list term for intentional misuse or diversion.,../rules/event_groups.md
+cases,misuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for intentional misuse or diversion.,../rules/event_groups.md
+cases,addiction_narrow,BOOLEAN,The case lists a narrow-list term for drug or substance use disorder.,../rules/event_groups.md
+cases,addiction_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug or substance use disorder.,../rules/event_groups.md
+cases,withdrawal_narrow,BOOLEAN,The case lists a narrow-list term for withdrawal.,../rules/event_groups.md
+cases,withdrawal_broad,BOOLEAN,The case lists a narrow- or broad-list term for withdrawal.,../rules/event_groups.md
+cases,overdose_narrow,BOOLEAN,The case lists a narrow-list term for overdose.,../rules/event_groups.md
+cases,overdose_broad,BOOLEAN,The case lists a narrow- or broad-list term for overdose.,../rules/event_groups.md
+cases,ineffectiveness_narrow,BOOLEAN,The case lists a narrow-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+cases,ineffectiveness_broad,BOOLEAN,The case lists a narrow- or broad-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+cases,product_quality_supply_narrow,BOOLEAN,"The case lists a narrow-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+cases,product_quality_supply_broad,BOOLEAN,"The case lists a narrow- or broad-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+cases,death,BOOLEAN,The case has OUTC code `DE`.,../rules/rq_datasets.md
+cases,life_threatening,BOOLEAN,The case has OUTC code `LT`.,../rules/rq_datasets.md
+cases,hospitalization,BOOLEAN,The case has OUTC code `HO`.,../rules/rq_datasets.md
+cases,serious_target,BOOLEAN,"Any of death, life-threatening or hospitalization: what RQ3 predicts.",../rules/rq_datasets.md
+cases,outc_state,VARCHAR,"`TARGET_CODE`, `OTHER_CODE_ONLY` (only other outcome codes) or `NO_OUTC_RECORD`.",../rules/rq_datasets.md
+cases,dose_reported,BOOLEAN,A suspect ADHD drug has a numeric dose and a unit.,../rules/rq_datasets.md
+cases,dose_unit_mg,BOOLEAN,That dose unit is mg.,../rules/rq_datasets.md
+cases,route_category,VARCHAR,"Route of the suspect ADHD drug: `ORAL`, `OTHER` or `UNKNOWN`.",../rules/rq_datasets.md
+cases,concomitant_drugs,BIGINT,"Distinct concomitant (`C`) drugs on the report (study-group cases only, else 0).",../rules/rq_datasets.md
+cases,other_suspect_drugs,BIGINT,"Distinct non-ADHD suspect drugs on the report (study-group cases only, else 0).",../rules/rq_datasets.md
+cases,interacting_drugs,BIGINT,"Distinct interacting (`I`) drugs on the report (study-group cases only, else 0).",../rules/rq_datasets.md
+rq1_cases,,,RQ1 dataset: one row per study-group case (rows of `cases` with a `rq1_group`).,../rules/rq_datasets.md
+rq1_cases,caseid,VARCHAR,The case (one row per case).,../rules/case_selection.md
+rq1_cases,init_date,DATE,Date FDA first received the case (`init_fda_dt` as a date; missing if not a full valid date).,../rules/case_selection.md
+rq1_cases,covid_window,BOOLEAN,"FDA first received the case 2020-03-01 to 2021-12-31 (COVID-19 window, DQ-037).",../rules/rq_datasets.md
+rq1_cases,age_years,DOUBLE,"Age in years, converted from the reported unit; missing when not reported or outside 0-120.",../rules/demographics.md
+rq1_cases,age_band,VARCHAR,"Age band from `age_years`: `0_5`, `6_11`, `12_17`, `18_25`, `26_44`, `45_64`, `65_PLUS`, or `UNKNOWN`.",../rules/demographics.md
+rq1_cases,sex,VARCHAR,"`F`, `M`, `UNKNOWN` (reported unknown) or `NOT_REPORTED`.",../rules/demographics.md
+rq1_cases,wt_kg,DOUBLE,"Weight in kilograms, converted from the reported unit; missing when not reported or outside 0-650 kg.",../rules/demographics.md
+rq1_cases,rq1_group,VARCHAR,"Study group: `STIMULANT`, `NONSTIMULANT` (includes alpha-2 agonists), `MULTI_ADHD_CLASS` (both, kept apart), or missing (not in the study group).",../rules/study_groups.md
+rq1_cases,rq1_group_confirmed,VARCHAR,"Same, counting only ADHD drugs whose own indication is ADHD (sensitivity check).",../rules/study_groups.md
+rq1_cases,alpha2,BOOLEAN,A suspect ADHD drug is an alpha-2 agonist (guanfacine or clonidine).,../rules/study_groups.md
+rq1_cases,concomitant_adhd,BOOLEAN,"An ADHD drug is listed as concomitant or interacting (background, not exposure).",../rules/study_groups.md
+rq1_cases,cardiovascular_narrow,BOOLEAN,"The case lists a narrow-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+rq1_cases,cardiovascular_broad,BOOLEAN,"The case lists a narrow- or broad-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+rq1_cases,psychiatric_narrow,BOOLEAN,"The case lists a narrow-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+rq1_cases,psychiatric_broad,BOOLEAN,"The case lists a narrow- or broad-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+rq1_cases,dependence_narrow,BOOLEAN,The case lists a narrow-list term for drug dependence.,../rules/event_groups.md
+rq1_cases,dependence_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug dependence.,../rules/event_groups.md
+rq1_cases,abuse_narrow,BOOLEAN,The case lists a narrow-list term for drug abuse.,../rules/event_groups.md
+rq1_cases,abuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug abuse.,../rules/event_groups.md
+rq1_cases,misuse_narrow,BOOLEAN,The case lists a narrow-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq1_cases,misuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq1_cases,addiction_narrow,BOOLEAN,The case lists a narrow-list term for drug or substance use disorder.,../rules/event_groups.md
+rq1_cases,addiction_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug or substance use disorder.,../rules/event_groups.md
+rq1_cases,overdose_narrow,BOOLEAN,The case lists a narrow-list term for overdose.,../rules/event_groups.md
+rq1_cases,overdose_broad,BOOLEAN,The case lists a narrow- or broad-list term for overdose.,../rules/event_groups.md
+rq1_counts,,,"RQ1 count table: kept cases per group x age band x sex x COVID window, with event counts. No case rows.",../rules/rq_datasets.md
+rq1_counts,rq1_group,VARCHAR,"`STIMULANT`, `NONSTIMULANT`, `MULTI_ADHD_CLASS`, or `OTHER_FAERS` for every kept case outside the study group.",../rules/rq_datasets.md
+rq1_counts,rq1_group_confirmed,VARCHAR,As in `cases`; `NONE` when unset.,../rules/study_groups.md
+rq1_counts,alpha2,BOOLEAN,As in `cases`.,../rules/study_groups.md
+rq1_counts,covid_window,BOOLEAN,As in `rq1_cases`.,../rules/rq_datasets.md
+rq1_counts,age_band,VARCHAR,As in `cases`.,../rules/demographics.md
+rq1_counts,sex,VARCHAR,As in `cases`.,../rules/demographics.md
+rq1_counts,cases,BIGINT,Cases in the row.,../rules/rq_datasets.md
+rq1_counts,cardiovascular_narrow,BIGINT,"Cases in the row with a narrow-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+rq1_counts,cardiovascular_broad,BIGINT,"Cases in the row with a broad-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+rq1_counts,psychiatric_narrow,BIGINT,"Cases in the row with a narrow-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+rq1_counts,psychiatric_broad,BIGINT,"Cases in the row with a broad-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+rq1_counts,dependence_narrow,BIGINT,Cases in the row with a narrow-list term for drug dependence.,../rules/event_groups.md
+rq1_counts,dependence_broad,BIGINT,Cases in the row with a broad-list term for drug dependence.,../rules/event_groups.md
+rq1_counts,abuse_narrow,BIGINT,Cases in the row with a narrow-list term for drug abuse.,../rules/event_groups.md
+rq1_counts,abuse_broad,BIGINT,Cases in the row with a broad-list term for drug abuse.,../rules/event_groups.md
+rq1_counts,misuse_narrow,BIGINT,Cases in the row with a narrow-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq1_counts,misuse_broad,BIGINT,Cases in the row with a broad-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq1_counts,addiction_narrow,BIGINT,Cases in the row with a narrow-list term for drug or substance use disorder.,../rules/event_groups.md
+rq1_counts,addiction_broad,BIGINT,Cases in the row with a broad-list term for drug or substance use disorder.,../rules/event_groups.md
+rq1_counts,overdose_narrow,BIGINT,Cases in the row with a narrow-list term for overdose.,../rules/event_groups.md
+rq1_counts,overdose_broad,BIGINT,Cases in the row with a broad-list term for overdose.,../rules/event_groups.md
+rq1_terms,,,RQ1 term table: how many stimulant and nonstimulant cases list each reaction term (for the most frequently reported terms).,../rules/rq_datasets.md
+rq1_terms,rq1_group,VARCHAR,`STIMULANT` or `NONSTIMULANT`.,../rules/study_groups.md
+rq1_terms,pt,VARCHAR,Reaction term (lower case).,../rules/event_groups.md
+rq1_terms,cases,BIGINT,Cases in the group that list the term.,../rules/rq_datasets.md
+rq2_cases,,,RQ2 dataset: one row per study-group case with a valid receipt date.,../rules/rq_datasets.md
+rq2_cases,caseid,VARCHAR,The case.,../rules/case_selection.md
+rq2_cases,rq1_group,VARCHAR,As in `cases`.,../rules/study_groups.md
+rq2_cases,rq1_group_confirmed,VARCHAR,As in `cases`.,../rules/study_groups.md
+rq2_cases,init_date,DATE,As in `cases`.,../rules/case_selection.md
+rq2_cases,init_month,DATE,First day of the receipt month: the RQ2 time axis.,../rules/rq_datasets.md
+rq2_cases,period,VARCHAR,"`before shortage` (Jan 2018 - Sep 2022), `shortage to label change` (Nov 2022 - Apr 2023), `after label change` (Jun 2023 - Feb 2026), or missing (announcement months and months outside the window).",../rules/rq_datasets.md
+rq2_cases,abuse_narrow,BOOLEAN,The case lists a narrow-list term for drug abuse.,../rules/event_groups.md
+rq2_cases,abuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug abuse.,../rules/event_groups.md
+rq2_cases,misuse_narrow,BOOLEAN,The case lists a narrow-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq2_cases,misuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq2_cases,addiction_narrow,BOOLEAN,The case lists a narrow-list term for drug or substance use disorder.,../rules/event_groups.md
+rq2_cases,addiction_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug or substance use disorder.,../rules/event_groups.md
+rq2_cases,withdrawal_narrow,BOOLEAN,The case lists a narrow-list term for withdrawal.,../rules/event_groups.md
+rq2_cases,withdrawal_broad,BOOLEAN,The case lists a narrow- or broad-list term for withdrawal.,../rules/event_groups.md
+rq2_cases,ineffectiveness_narrow,BOOLEAN,The case lists a narrow-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+rq2_cases,ineffectiveness_broad,BOOLEAN,The case lists a narrow- or broad-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+rq2_cases,product_quality_supply_narrow,BOOLEAN,"The case lists a narrow-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+rq2_cases,product_quality_supply_broad,BOOLEAN,"The case lists a narrow- or broad-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+rq2_cases,rq2_any_narrow,BOOLEAN,Any of the five RQ2 event groups (narrow lists): the primary RQ2 outcome.,../rules/rq_datasets.md
+rq2_cases,rq2_any_broad,BOOLEAN,Any of the five RQ2 event groups (broad lists).,../rules/rq_datasets.md
+rq2_monthly,,,"RQ2 time series: cases and event counts per study group and month, January 2018 to February 2026.",../rules/rq_datasets.md
+rq2_monthly,grouping,VARCHAR,Which group column the row uses: `rq1_group` (main) or `rq1_group_confirmed` (sensitivity).,../rules/rq_datasets.md
+rq2_monthly,grp,VARCHAR,"The group (`STIMULANT`, `NONSTIMULANT` or `MULTI_ADHD_CLASS`).",../rules/study_groups.md
+rq2_monthly,month,DATE,First day of the receipt month.,../rules/rq_datasets.md
+rq2_monthly,cases,BIGINT,Cases in the group received that month.,../rules/rq_datasets.md
+rq2_monthly,abuse_narrow,BIGINT,Cases in the row with a narrow-list term for drug abuse.,../rules/event_groups.md
+rq2_monthly,abuse_broad,BIGINT,Cases in the row with a broad-list term for drug abuse.,../rules/event_groups.md
+rq2_monthly,misuse_narrow,BIGINT,Cases in the row with a narrow-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq2_monthly,misuse_broad,BIGINT,Cases in the row with a broad-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq2_monthly,addiction_narrow,BIGINT,Cases in the row with a narrow-list term for drug or substance use disorder.,../rules/event_groups.md
+rq2_monthly,addiction_broad,BIGINT,Cases in the row with a broad-list term for drug or substance use disorder.,../rules/event_groups.md
+rq2_monthly,withdrawal_narrow,BIGINT,Cases in the row with a narrow-list term for withdrawal.,../rules/event_groups.md
+rq2_monthly,withdrawal_broad,BIGINT,Cases in the row with a broad-list term for withdrawal.,../rules/event_groups.md
+rq2_monthly,ineffectiveness_narrow,BIGINT,Cases in the row with a narrow-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+rq2_monthly,ineffectiveness_broad,BIGINT,Cases in the row with a broad-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+rq2_monthly,product_quality_supply_narrow,BIGINT,"Cases in the row with a narrow-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+rq2_monthly,product_quality_supply_broad,BIGINT,"Cases in the row with a broad-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+rq2_monthly,rq2_any_narrow,BIGINT,Cases with any of the five RQ2 event groups (narrow lists).,../rules/rq_datasets.md
+rq2_monthly,rq2_any_broad,BIGINT,Cases with any of the five RQ2 event groups (broad lists).,../rules/rq_datasets.md
+rq3_cases,,,"RQ3 dataset: study-group cases of the 2022-2026 database with the serious-outcome target and predictors, split by time.",../rules/rq_datasets.md
+rq3_cases,split,VARCHAR,"`TRAIN` (received before 2025, case version as known at the end of 2024Q4) or `TEST` (received January 2025 to February 2026, newest version). No case is in both.",../rules/rq_datasets.md
+rq3_cases,caseid,VARCHAR,The case (one row per case).,../rules/case_selection.md
+rq3_cases,init_date,DATE,Date FDA first received the case (`init_fda_dt` as a date; missing if not a full valid date).,../rules/case_selection.md
+rq3_cases,age_years,DOUBLE,"Age in years, converted from the reported unit; missing when not reported or outside 0-120.",../rules/demographics.md
+rq3_cases,age_band,VARCHAR,"Age band from `age_years`: `0_5`, `6_11`, `12_17`, `18_25`, `26_44`, `45_64`, `65_PLUS`, or `UNKNOWN`.",../rules/demographics.md
+rq3_cases,sex,VARCHAR,"`F`, `M`, `UNKNOWN` (reported unknown) or `NOT_REPORTED`.",../rules/demographics.md
+rq3_cases,wt_kg,DOUBLE,"Weight in kilograms, converted from the reported unit; missing when not reported or outside 0-650 kg.",../rules/demographics.md
+rq3_cases,rq1_group,VARCHAR,"Study group: `STIMULANT`, `NONSTIMULANT` (includes alpha-2 agonists), `MULTI_ADHD_CLASS` (both, kept apart), or missing (not in the study group).",../rules/study_groups.md
+rq3_cases,rq1_group_confirmed,VARCHAR,"Same, counting only ADHD drugs whose own indication is ADHD (sensitivity check).",../rules/study_groups.md
+rq3_cases,alpha2,BOOLEAN,A suspect ADHD drug is an alpha-2 agonist (guanfacine or clonidine).,../rules/study_groups.md
+rq3_cases,concomitant_adhd,BOOLEAN,"An ADHD drug is listed as concomitant or interacting (background, not exposure).",../rules/study_groups.md
+rq3_cases,cardiovascular_narrow,BOOLEAN,"The case lists a narrow-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+rq3_cases,cardiovascular_broad,BOOLEAN,"The case lists a narrow- or broad-list term for heart and blood-vessel events (raised blood pressure, fast or slow heart rhythm, stroke ...).",../rules/event_groups.md
+rq3_cases,psychiatric_narrow,BOOLEAN,"The case lists a narrow-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+rq3_cases,psychiatric_broad,BOOLEAN,"The case lists a narrow- or broad-list term for psychiatric events (psychosis, mania, suicidality, anxiety ...).",../rules/event_groups.md
+rq3_cases,dependence_narrow,BOOLEAN,The case lists a narrow-list term for drug dependence.,../rules/event_groups.md
+rq3_cases,dependence_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug dependence.,../rules/event_groups.md
+rq3_cases,abuse_narrow,BOOLEAN,The case lists a narrow-list term for drug abuse.,../rules/event_groups.md
+rq3_cases,abuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug abuse.,../rules/event_groups.md
+rq3_cases,misuse_narrow,BOOLEAN,The case lists a narrow-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq3_cases,misuse_broad,BOOLEAN,The case lists a narrow- or broad-list term for intentional misuse or diversion.,../rules/event_groups.md
+rq3_cases,addiction_narrow,BOOLEAN,The case lists a narrow-list term for drug or substance use disorder.,../rules/event_groups.md
+rq3_cases,addiction_broad,BOOLEAN,The case lists a narrow- or broad-list term for drug or substance use disorder.,../rules/event_groups.md
+rq3_cases,withdrawal_narrow,BOOLEAN,The case lists a narrow-list term for withdrawal.,../rules/event_groups.md
+rq3_cases,withdrawal_broad,BOOLEAN,The case lists a narrow- or broad-list term for withdrawal.,../rules/event_groups.md
+rq3_cases,overdose_narrow,BOOLEAN,The case lists a narrow-list term for overdose.,../rules/event_groups.md
+rq3_cases,overdose_broad,BOOLEAN,The case lists a narrow- or broad-list term for overdose.,../rules/event_groups.md
+rq3_cases,ineffectiveness_narrow,BOOLEAN,The case lists a narrow-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+rq3_cases,ineffectiveness_broad,BOOLEAN,The case lists a narrow- or broad-list term for the drug not working (lack or loss of effect).,../rules/event_groups.md
+rq3_cases,product_quality_supply_narrow,BOOLEAN,"The case lists a narrow-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+rq3_cases,product_quality_supply_broad,BOOLEAN,"The case lists a narrow- or broad-list term for product quality, substitution or availability problems (RQ2 control series).",../rules/event_groups.md
+rq3_cases,death,BOOLEAN,The case has OUTC code `DE`.,../rules/rq_datasets.md
+rq3_cases,life_threatening,BOOLEAN,The case has OUTC code `LT`.,../rules/rq_datasets.md
+rq3_cases,hospitalization,BOOLEAN,The case has OUTC code `HO`.,../rules/rq_datasets.md
+rq3_cases,serious_target,BOOLEAN,"Any of death, life-threatening or hospitalization: what RQ3 predicts.",../rules/rq_datasets.md
+rq3_cases,outc_state,VARCHAR,"`TARGET_CODE`, `OTHER_CODE_ONLY` (only other outcome codes) or `NO_OUTC_RECORD`.",../rules/rq_datasets.md
+rq3_cases,dose_reported,BOOLEAN,A suspect ADHD drug has a numeric dose and a unit.,../rules/rq_datasets.md
+rq3_cases,dose_unit_mg,BOOLEAN,That dose unit is mg.,../rules/rq_datasets.md
+rq3_cases,route_category,VARCHAR,"Route of the suspect ADHD drug: `ORAL`, `OTHER` or `UNKNOWN`.",../rules/rq_datasets.md
+rq3_cases,concomitant_drugs,BIGINT,"Distinct concomitant (`C`) drugs on the report (study-group cases only, else 0).",../rules/rq_datasets.md
+rq3_cases,other_suspect_drugs,BIGINT,"Distinct non-ADHD suspect drugs on the report (study-group cases only, else 0).",../rules/rq_datasets.md
+rq3_cases,interacting_drugs,BIGINT,"Distinct interacting (`I`) drugs on the report (study-group cases only, else 0).",../rules/rq_datasets.md
